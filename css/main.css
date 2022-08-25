@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.bodyHome{
+    min-height: 100vh;
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: " headerHome"
+                         " mainHome"
+                         " footerHome";
+}
+
+.headerHome{
+    text-align: center;
+    grid-area: headerHome;
+
+}
+h1{
+   color: orange;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.mainHome{
+  grid-area: mainHome;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: grey;
+  margin-top: 10px;
+  font-family:bold;
+  font-size: 20px;
+
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: orangered;
+}
+  
+.searchInput:focus {
+    border-bottom: 2px solid orange;
+}
+
+
+.footerHome{
+    grid-area: footerHome;
+    text-align: center;
+}
