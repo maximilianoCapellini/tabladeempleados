@@ -24,5 +24,21 @@ function filtro(){
       filas[i].style.display = lenguaje.toUpperCase().indexOf(valor) > -1 ? "" : "none";
     }
 }
-
   document.getElementById("searchInput").addEventListener("keyup", filtro);
+
+  const productos = [
+    {id:1, nombre : "fernet",precio: 1990 },
+    {id:2, nombre: " vodka", precio:1130},
+    {id:3, nombre: "campari",precio:990},
+    {id:4, nombre:"cordero", precio:700},
+  ]
+  let nombre = prompt("ingrese el nombre del producto");  
+  let producto = productos.find (item => item.nombre === nombre);
+  let mensaje = `
+  Id: ${producto.id}
+  nombre: ${producto.nombre}
+  precio: $${producto.precio}
+  `;
+  alert(mensaje); 
+  
+  
