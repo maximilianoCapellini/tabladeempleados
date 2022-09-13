@@ -42,3 +42,18 @@ function filtro(){
   alert(mensaje); 
   
   
+  let formulario = document.getElementById("formulario");
+ formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let inputs = e.target.children;
+
+  if(!inputs[0].value.includes("@")){
+    contenedor.innerHTML = "";
+    let div = document.createElement("div");
+    div.innerHTML = "Correo inválido";
+    div.className = "rojo";
+    contenedor.append(div);
+  }else{
+    contenedor.innerHTML = "";
+  }
+})

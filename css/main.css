@@ -55,3 +55,20 @@ h1{
     grid-area: footerHome;
     text-align: center;
 }
+
+.rojo{
+    background-color: red;
+  }
+  
+.azul{
+    background-color: blue;
+  }
+  
+.amarillo{
+    background-color: yellow;
+  }
+  
+.verde{
+    background-color: green;
+  }
+
